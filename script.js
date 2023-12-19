@@ -27,12 +27,12 @@ const switchPlayer = function () {
     player1El.classList.toggle("player--active");
 }
 btnRoll.addEventListener("click", function () {
-    if(playing){
+    if (playing) {
         const dice = Math.trunc(Math.random() * 6) + 1;
 
         diceEl.classList.remove("hidden");
         diceEl.src = `/images/dice-${dice}.png`
-    
+
         if (dice !== 1) {
             currentScore += dice;
             document.querySelector(`#current--${activePlayer}`).textContent = currentScore;
@@ -62,19 +62,25 @@ btnNew.addEventListener("click", function () {
     document.querySelector(`.player--${activePlayer}`).classList.remove("player--winner");
     activePlayer = 0;
     currentScore = 0;
+
     scores[0] = 0;
     scores[1] = 0;
+
     current0El.textContent = 0;
     current1El.textContent = 0;
     score0El.textContent = 0;
     score1El.textContent = 0;
+
     document.querySelector(`.player--0`).classList.add("player--active");
-    if(document.querySelector(`.player--1`).classList.contains("player--active")){
+
+    if (document.querySelector(`.player--1`).classList.contains("player--active")) {
         document.querySelector(`.player--1`).classList.remove("player--active")
     }
+
     btnRoll.addEventListener("click", function () {
         diceEl.classList.remove("hidden");
-    })
+    });
+
 });
 
 //Modal 
