@@ -13,7 +13,7 @@ const btnHold = document.querySelector(".btn--hold");
 //Condições
 diceEl.classList.add("hidden");
 
-//Funcionalidades do dado
+//Pontuações
 const scores = [0, 0]
 let currentScore = 0;
 let activePlayer = 0;
@@ -26,6 +26,7 @@ const switchPlayer = function () {
     player0El.classList.toggle("player--active");
     player1El.classList.toggle("player--active");
 }
+//Botao jogar dado
 btnRoll.addEventListener("click", function () {
     if (playing) {
         const dice = Math.trunc(Math.random() * 6) + 1;
@@ -41,11 +42,12 @@ btnRoll.addEventListener("click", function () {
         }
     }
 });
-
+//Botão segurar 
 btnHold.addEventListener("click", function () {
     if (playing) {
         scores[activePlayer] += currentScore;
         document.querySelector(`#score--${activePlayer}`).textContent = scores[activePlayer];
+
         if (scores[activePlayer] >= 100) {
             playing = false;
             diceEl.classList.add("hidden");
@@ -55,8 +57,9 @@ btnHold.addEventListener("click", function () {
             switchPlayer();
         }
     }
-});
 
+});
+//Botão Novo Jogo
 btnNew.addEventListener("click", function () {
     playing = true;
     document.querySelector(`.player--${activePlayer}`).classList.remove("player--winner");
