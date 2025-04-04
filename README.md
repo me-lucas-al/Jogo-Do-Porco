@@ -1,1 +1,1 @@
-O Pig Game é um jogo de dados americano para dois ou mais jogadores. Cada jogador rola um dado e soma os pontos, podendo continuar ou parar. Se tirar 1, perde os pontos do turno e passa a vez. O objetivo é atingir 100 pontos primeiro.
+O Jogo do Porco (The Pig Game) é um jogo de dados americano para dois ou mais jogadores. Cada jogador rola um dado e soma os pontos, podendo continuar ou parar. Se tirar 1, perde os pontos do turno e passa a vez. O objetivo é atingir 100 pontos primeiro.
