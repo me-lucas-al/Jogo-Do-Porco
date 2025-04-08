@@ -27,9 +27,9 @@ O **Jogo do Porco** (ou "Pig Game") é um jogo de dados simples e divertido para
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **HTML5**
-- **CSS3**
-- **JavaScript Puro (Vanilla JS)**
+- **HTML**
+- **CSS**
+- **JavaScript**
 
 ---
 
@@ -39,7 +39,4 @@ Este projeto foi implantado utilizando o **Vercel**, uma plataforma gratuita par
 
 🔗 Link de acesso: [https://jogo-do-porco.vercel.app](https://jogo-do-porco.vercel.app)
 
----
-
-## 📁 Estrutura de Pastas
 
