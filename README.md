@@ -1,6 +1,6 @@
 # 🐷 Jogo do Porco
 
-O **Jogo do Porco** (ou "Pig Game") é um jogo de dados simples e divertido para dois jogadores, onde o objetivo é ser o primeiro a alcançar 100 pontos!
+O **Jogo do Porco** (ou "Pig Game") é um jogo americano de dados para dois jogadores, onde o objetivo é ser o primeiro a alcançar 100 pontos sem cair no número 1 do dado!
 
 🎮 Acesse o jogo online: [https://jogo-do-porco.vercel.app](https://jogo-do-porco.vercel.app)
 
